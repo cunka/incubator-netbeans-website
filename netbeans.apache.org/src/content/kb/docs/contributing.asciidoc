@@ -29,6 +29,7 @@
 :description: Tutorial Contribution Guidelines
 :reviewed: 2019-01-25
 :experimental:
+:commandkey: &#8984;
 
 The Apache NetBeans Tutorials were included in the third donation from Oracle to the Apache Software Foundation. Many of these tutorials need to be reviewed. Everybody can help out in the review process. All you need is a web browser, a GitHub account and a basic knowledge of link:https://asciidoc.org/[AsciiDoc].
 
@@ -302,6 +303,28 @@ kbd:[Ctrl+\ ]
 _Produces this result_ 
 
 kbd:[Ctrl+\ ]
+
+The Apple Command key {commandkey} graphic can be alternatively be used instead of using the kbd:[Command] short cut graphic. +
+To enable its use, it first must be declared as a variable/attribute in the page header metadata. 
+
+[source, asciidoc]
+----
+:commandkey: &#8984;
+----
+
+The variable _commandkey_ can now be used in brackets as a html entity to display the Apple Command key.
+
+_Example Asciidoc text for the Apple Command key_
+----
+kbd:[{commandkey}] - *Apple Command key!*
+----
+
+_Produces this result_ 
+
+kbd:[{commandkey}] - *Apple Command key!*
+
+
+
 
 === New features
 
